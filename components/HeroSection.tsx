@@ -18,17 +18,17 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-indigo-600/20 rounded-full blur-[150px] mix-blend-screen animate-blob" style={{ animationDelay: "2s" }}></div>
       </div> */}
       <div className="flex items-center font-inter -mt-30 justify-center w-full h-full absolute opacity-50 overflow-hidden">
-                  <img src="/assets/Hero_Section.png" alt="Blackcoffer Hero" className="" />
-        </div>
+        <img src="./assets/Hero_Section.png" alt="Blackcoffer Hero" className="" />
+      </div>
 
       <div className="max-w-7xl mx-auto  px-6 w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left huge text */}
         <div className="flex flex-col animate-[fadeInUp_1s_ease-out]">
           <h1 className="text-7xl md:text-8xl lg:text-[5rem] font-bold leading-[1.2] tracking-tighter">
-            <span className="block text-white mb-50 ">TOGETHER WE 
+            <span className="block text-white mb-50 ">TOGETHER WE
               <span className="block text-white ml-55">REINVENTED</span>
             </span>
-            
+
           </h1>
         </div>
 

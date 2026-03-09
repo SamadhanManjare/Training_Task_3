@@ -12,10 +12,10 @@ const StatsSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 flex justify-center items-center">
-        <img 
-          src="/assets/Group 45.png" 
-          alt="Blackcoffer Stats" 
-          className="w-full max-w-5xl h-auto rounded-2xl object-cover hover:scale-[1.01] transition-transform duration-500" 
+        <img
+          src="./assets/Group 45.png"
+          alt="Blackcoffer Stats"
+          className="w-full max-w-5xl h-auto rounded-2xl object-cover hover:scale-[1.01] transition-transform duration-500"
         />
       </div>
     </section>
