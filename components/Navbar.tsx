@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { getAssetPath } from "../lib/asset";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center">
             <Image
-              src="./assets/Mask_Group.png"
+              src={getAssetPath("/assets/Mask_Group.png")}
               alt="Blackcoffer Logo"
               width={160}
               height={84}

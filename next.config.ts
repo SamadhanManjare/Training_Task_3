@@ -6,9 +6,8 @@ let basePath = "";
 
 // Need to set basePath for gh-pages so assets are resolved properly
 if (isGithubActions || process.env.NODE_ENV === "production") {
-  // Assuming the repository name is 'blackcoffer_homepage'. 
-  // IMPORTANT: The user must change this if the repository name is different.
-  const repo = "blackcoffer_homepage";
+  // Found the correct repository name from .git/config
+  const repo = "Training_Task_3";
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }

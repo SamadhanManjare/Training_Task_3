@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { getAssetPath } from "../lib/asset";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -18,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-indigo-600/20 rounded-full blur-[150px] mix-blend-screen animate-blob" style={{ animationDelay: "2s" }}></div>
       </div> */}
       <div className="flex items-center font-inter -mt-30 justify-center w-full h-full absolute opacity-50 overflow-hidden">
-        <img src="./assets/Hero_Section.png" alt="Blackcoffer Hero" className="" />
+        <img src={getAssetPath("/assets/Hero_Section.png")} alt="Blackcoffer Hero" className="" />
       </div>
 
       <div className="max-w-7xl mx-auto  px-6 w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

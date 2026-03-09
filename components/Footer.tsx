@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image"; // Import next/image if you prefer, but standard img is also fine
+import { getAssetPath } from "../lib/asset";
 
 const Footer = () => {
   return (
@@ -55,7 +56,7 @@ const Footer = () => {
         {/* Right Side GIF (500x500) */}
         <div className="flex-shrink-0">
           <img
-            src="./assets/footer.gif"
+            src={getAssetPath("/assets/footer.gif")}
             alt="Footer Animation"
             className="w-[500px] h-[500px] object-cover rounded-lg -mt-16"
           />

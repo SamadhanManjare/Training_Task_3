@@ -1,46 +1,47 @@
 "use client";
 import React from "react";
+import { getAssetPath } from "../lib/asset";
 
 const services = [
   {
     title: "Big Data & Analytics",
     // image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800",
-    image: "./assets/Group_6.png",
+    image: getAssetPath("/assets/Group_6.png"),
     info: "Transform your raw data into actionable insights with our advanced big data and analytics solutions tailored for your enterprise."
   },
   {
     title: "Consultancy",
-    image: "./assets/Consult.png",
+    image: getAssetPath("/assets/Consult.png"),
     info: "Expert advice and strategic planning to help your business navigate complex challenges and accelerate growth."
   },
   {
     title: "HR & staffing",
-    image: "./assets/HR.png",
+    image: getAssetPath("/assets/HR.png"),
     info: "Find the right talent for your team with our comprehensive HR and staffing services built on extensive networks."
   },
   {
     title: "Cybersecurity",
-    image: "./assets/CYB.png",
+    image: getAssetPath("/assets/CYB.png"),
     info: "Protect your digital assets with our robust and proactive cybersecurity measures designed for modern threats."
   },
   {
     title: "Consultancy",
-    image: "./assets/Consultancy.png",
+    image: getAssetPath("/assets/Consultancy.png"),
     info: "Tailored consulting services designed to optimize your operations, reduce overhead, and drive bottom-line results."
   },
   {
     title: "Sustainability",
-    image: "./assets/Sustainability.png",
+    image: getAssetPath("/assets/Sustainability.png"),
     info: "Integrate sustainable practices into your business model for long-term environmental impact and regulatory compliance."
   },
   {
     title: "Cloud",
-    image: "./assets/Cloud.png",
+    image: getAssetPath("/assets/Cloud.png"),
     info: "Scalable and secure cloud solutions to enhance your business flexibility, agility, and overall efficiency."
   },
   {
     title: "Metaverse",
-    image: "./assets/Meta.png",
+    image: getAssetPath("/assets/Meta.png"),
     info: "Step into the future with our immersive metaverse development and integration platforms customized for emerging markets."
   },
 ];
