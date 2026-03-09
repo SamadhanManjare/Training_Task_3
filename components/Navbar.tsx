@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center">
             <img
-              src={getAssetPath("/assets/Blackcoffer.png")}
+              src={getAssetPath("/assets/Mask_group.png")}
               alt="Blackcoffer Logo"
               width={160}
               height={84}
