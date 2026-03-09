@@ -23,13 +23,12 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center">
-            <Image
-              src={getAssetPath("/assets/Mask_Group.png")}
+            <img
+              src={getAssetPath("/assets/Blackcoffer.png")}
               alt="Blackcoffer Logo"
               width={160}
               height={84}
               className="object-contain colour-blend-screen"
-              priority
             />
           </div>
         </Link>
