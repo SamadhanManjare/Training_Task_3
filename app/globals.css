@@ -1,26 +1,88 @@
 @import "tailwindcss";
+@source "../components";
+@source "../app";
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
+
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --color-primary: #0044ff;
+  --color-primary-hover: #1e3a8a;
+  --color-neon-blue: #00d2ff;
+  
+  --color-dark-surface: #0a0a0a;
+  --color-dark-card: #111111;
+  --color-dark-border: #333333;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --animate-blob: blob 7s infinite;
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Effects */
+.glass-panel {
+  background: rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff, #aaaaaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-hero-wave {
+  background-image: radial-gradient(circle at 15% 50%, rgba(0, 50, 255, 0.15), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(0, 50, 255, 0.15), transparent 25%),
+                    repeating-radial-gradient(circle at 0 0, transparent 0, #000 10px), repeating-linear-gradient(#0022aa11, #0022aa11);
+  background-size: cover;
+}
+
+/* For bento box grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1.5rem;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0044ff;
 }
