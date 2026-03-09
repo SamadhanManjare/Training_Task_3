@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/blackcoffer_homepage//_next/:path+",
+        "destination": "/blackcoffer_homepage/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
